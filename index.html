@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--/google fonts-->
+    <title>Conversor de Temperatura</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-container">
+            <form action="">
+                <div class="temp_calculator_inputs">
+                    <h1 class="title"><center>Conversor de Temperatura</center></h1>
+                    <br>
+                    <legend>Informe a temperatura:</legend>
+                    <input type="number" id="input_value" name="value">
+                        
+                    <select name="input" id="input">
+                        <option value="celsius">Celsius (&deg;C)</option>
+                        <option value="fahrenheit">Fahrenheit (&deg;F)</option> 
+                    </select> 
+
+                    <div class="calculator_input">
+                        <br><legend>Converter para:</legend>
+                            
+                        <select name="output" id="output">
+                            <option value="celsius">Celsius (&deg;C)</option>
+                            <option value="fahrenheit">Fahrenheit (&deg;F)</option> 
+                        </select>
+                    </div>
+
+                    <br><center><div class="btn">
+                        <button type="button" id="convert">Converter</button>
+                        <button type="button" id="clean">Limpar</button>
+                    </div></center>
+                </div>
+            </form>
+        </div>
+            <br><center><div class="result-area">
+            <h1 id="result"></h1>
+        </div></center>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
